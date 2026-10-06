@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+
+{% block title %}
+VoiceInsight AI | Dashboard
+{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="badge">
+            AI-POWERED ANALYSIS
+        </span>
+
+        <h2>
+            Understand Every
+            <span>Word & Voice</span>
+        </h2>
+
+        <p>
+            Analyze written text and spoken communication using
+            AI-powered sentiment, emotion and communication intelligence.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="analysis-grid">
+
+    <!-- TEXT ANALYSIS -->
+
+    <div class="analysis-card">
+
+        <div class="card-icon text-icon">
+            T
+        </div>
+
+        <h3>Text Analysis</h3>
+
+        <p>
+            Analyze written content for sentiment, emotion,
+            keywords and communication quality.
+        </p>
+
+        <textarea
+            id="textInput"
+            placeholder="Enter or paste your text here..."></textarea>
+
+        <button class="primary-btn" onclick="analyzeText()">
+            Analyze Text
+        </button>
+
+    </div>
+
+
+    <!-- SPEECH ANALYSIS -->
+
+    <div class="analysis-card">
+
+        <div class="card-icon speech-icon">
+            🎙
+        </div>
+
+        <h3>Speech Analysis</h3>
+
+        <p>
+            Upload a voice recording and convert speech into
+            meaningful communication insights.
+        </p>
+
+        <div class="upload-box">
+
+            <input
+                type="file"
+                id="audioInput"
+                accept="audio/*">
+
+            <label for="audioInput">
+                <strong>Upload Audio</strong>
+                <span>MP3, WAV, M4A</span>
+            </label>
+
+        </div>
+
+        <button class="secondary-btn" onclick="analyzeSpeech()">
+            Analyze Speech
+        </button>
+
+    </div>
+
+</section>
+
+
+<section class="features">
+
+    <div class="feature">
+        <strong>🎯 Sentiment</strong>
+        <span>Positive, negative or neutral</span>
+    </div>
+
+    <div class="feature">
+        <strong>🧠 Emotion</strong>
+        <span>Understand emotional tone</span>
+    </div>
+
+    <div class="feature">
+        <strong>🎤 Speech</strong>
+        <span>Convert voice into text</span>
+    </div>
+
+    <div class="feature">
+        <strong>📊 Insights</strong>
+        <span>Generate communication insights</span>
+    </div>
+
+</section>
+
+{% endblock %}
