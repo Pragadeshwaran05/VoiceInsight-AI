@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# Environment Variables
+.env
+.env.*
+
+# Flask
+instance/
+.webassets-cache/
+
+# Uploaded Files
+uploads/*
+!uploads/.gitkeep
+
+# Machine Learning / Model Cache
+.cache/
+huggingface_cache/
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
